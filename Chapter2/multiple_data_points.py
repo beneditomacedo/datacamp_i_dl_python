@@ -1,5 +1,6 @@
 # You've seen how different weights will have different accuracies on a single
-# prediction. But usually, you'll want to measure model accuracy on many points.
+# prediction. But usually, you'll want to measure model accuracy on many 
+# points.
 # You'll now write code to compare model accuracies for two different sets of
 # weights, which have been stored as weights_0 and weights_1.
 
