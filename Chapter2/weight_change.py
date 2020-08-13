@@ -16,19 +16,16 @@ def predict_with_network(input_data_row, weights):
 
     # Calculate node 0 value
     node_0_input = (input_data_row * weights['node_0']).sum()
-    # node_0_output = relu(node_0_input)
 
     # Calculate node 1 value
     node_1_input = (input_data_row * weights['node_1']).sum()
-    # node_1_output = relu(node_1_input)
 
     # Put node values into array: hidden_layer_outputs
-    # hidden_layer_outputs = np.array([node_0_output, node_1_output])
     hidden_layer_outputs = np.array([node_0_input, node_1_input])
     
     # Calculate model output
     input_to_final_layer = (hidden_layer_outputs * weights['output']).sum()
-    # model_output = relu(input_to_final_layer)
+
     model_output = input_to_final_layer
 
     # Return model output
