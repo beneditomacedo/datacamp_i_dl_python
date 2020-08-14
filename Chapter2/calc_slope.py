@@ -14,7 +14,6 @@ import numpy as np
 # The data point you will make a prediction for
 input_data = np.array([1, 2, 3])
 
-
 # Sample weights
 weights = np.array([0, 2, 1])
 
