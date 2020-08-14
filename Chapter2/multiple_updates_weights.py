@@ -21,6 +21,7 @@ def get_slope(input_data, target, weights):
     return slope
 
 
+# get_mse
 def get_mse(input_data, target, weights):
     preds = (input_data * weights).sum()
     mse = preds - target
