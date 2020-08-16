@@ -16,7 +16,7 @@ from keras.layers import Dense
 from keras.models import Sequential
 
 #
-# TODO if the names parameter is used during genfromtxt import the nd.array 
+# TODO if the names parameter is used during genfromtxt import the nd.array
 # shape will be wrong
 #
 predictors = np.genfromtxt("data/hourly_wages.csv", delimiter=',',
@@ -25,10 +25,9 @@ predictors = np.genfromtxt("data/hourly_wages.csv", delimiter=',',
 target = np.genfromtxt("data/hourly_wages.csv", delimiter=',',
                        usecols=(0))
 
-# Save the number of columns in predictors: n_cols
-# TODO shape column size is null
-# n_cols = predictors.shape[1]
-n_cols = 9
+# Checking the predictors shape
+assert len(predictors.shape) == 2, "look in np.gemfromtxt import comment"
+n_cols = predictors.shape[1]
 
 # Set up the model: model
 model = Sequential()
