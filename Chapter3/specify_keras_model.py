@@ -20,10 +20,10 @@ from keras.models import Sequential
 # shape will be wrong
 #
 predictors = np.genfromtxt("data/hourly_wages.csv", delimiter=',',
-                           usecols=np.r_[1:10])
+                           usecols=np.r_[1:10], skip_header=1)
 
 target = np.genfromtxt("data/hourly_wages.csv", delimiter=',',
-                       usecols=(0))
+                       usecols=(0), skip_header=1)
 
 # Checking the predictors shape
 assert len(predictors.shape) == 2, "look in np.gemfromtxt import comment"
