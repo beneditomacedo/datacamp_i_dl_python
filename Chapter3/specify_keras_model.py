@@ -52,3 +52,6 @@ print("Loss function: " + model.loss)
 
 # Fit the model
 model.fit(predictors, target)
+
+# Save the model
+model.save('data/class_model.h5')
